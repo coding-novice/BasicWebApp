@@ -19,8 +19,8 @@ public class QueryProcessor {
 
 
             String[] stringArray = query.split(" ");
-            int summand1 = stringArray[3];
-            int summand2 = stringArray[5];
+            int summand1 = Integer.parseInt(stringArray[3]);
+            int summand2 = Integer.parseInt(stringArray[5]);
 
             int intResult = summand1 + summand2;
             String stringResult = String.valueOf(intResult);
