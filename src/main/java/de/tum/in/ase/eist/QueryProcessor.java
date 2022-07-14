@@ -22,6 +22,8 @@ public class QueryProcessor {
             int summand1 = Integer.parseInt(stringArray[2]);
             int summand2 = Integer.parseInt(stringArray[4]);
 
+
+
             int intResult = summand1 + summand2;
             String stringResult = String.valueOf(intResult);
             return stringResult;
