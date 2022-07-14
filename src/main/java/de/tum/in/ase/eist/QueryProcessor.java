@@ -14,7 +14,17 @@ public class QueryProcessor {
         } else if (query.contains("name")) {
            return "MyTeam";
         } else { // TODO extend the programm here
-            return "";
+
+            // Beispiel: what is 18 plus 12
+
+
+            String[] stringArray = query.split(" ");
+            int summand1 = stringArray[3];
+            int summand2 = stringArray[5];
+
+            int intResult = summand1 + summand2;
+            String stringResult = String.valueOf(intResult);
+            return stringResult;
         }
     }
 }
