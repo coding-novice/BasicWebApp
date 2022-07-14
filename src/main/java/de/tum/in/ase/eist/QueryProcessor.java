@@ -29,12 +29,25 @@ public class QueryProcessor {
 //            int summand2 = Integer.parseInt(stringArray[4]);
 //
 
-            int summand1 = Integer.parseInt(query.substring(8,10));
-            int summand2 = Integer.parseInt(query.substring(16,18));
+            //tested version v2
+
+            String shortenedQuery = query.replaceAll("[^0-9]", "");
+
+            int summand1 = Integer.parseInt(shortenedQuery.substring(0,2));
+            int summand2 = Integer.parseInt(shortenedQuery.substring(2,4));
 
             int intResult = summand1 + summand2;
 
             return String.valueOf(intResult);
+
+            //working version v1
+
+//            int summand1 = Integer.parseInt(query.substring(8,10));
+//            int summand2 = Integer.parseInt(query.substring(16,18));
+//
+//            int intResult = summand1 + summand2;
+//
+//            return String.valueOf(intResult);
 
         }
 
