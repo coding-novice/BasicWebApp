@@ -18,15 +18,17 @@ public class QueryProcessor {
             // Beispiel: what is 18 plus 12
 
 
-            String[] stringArray = query.split(" ");
-            int summand1 = Integer.parseInt(stringArray[2]);
-            int summand2 = Integer.parseInt(stringArray[4]);
+//            String[] stringArray = query.split(" ");
+//            int summand1 = Integer.parseInt(stringArray[2]);
+//            int summand2 = Integer.parseInt(stringArray[4]);
+//
+//
+//
+//            int intResult = summand1 + summand2;
+//            String stringResult = String.valueOf(intResult);
+//            return stringResult;
 
-
-
-            int intResult = summand1 + summand2;
-            String stringResult = String.valueOf(intResult);
-            return stringResult;
+            return "";
         }
     }
 }
